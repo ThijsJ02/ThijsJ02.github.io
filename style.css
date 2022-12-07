@@ -1,0 +1,80 @@
+:root{
+    --custom-border-color: rgba(255, 255, 255, .1);
+}
+
+body{
+    background-color: rgb(5, 10, 24); 
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden; 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, a, p, span{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--custom-border-color);
+}
+
+nav > .nav-section{
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--custom-border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-logo-section,
+#nav-link-section,
+#nav-social-section{
+    flex-basis: calc(100% / 3);
+}
+
+#nav-logo-section > a > i{
+    font-size: 2.5rem;
+}
+
+#nav-logo-section{
+    justify-content: flex-start;
+}
+
+#nav-link-section{
+    gap: 3rem;
+    font-size: 1.2rem;
+}
+
+#nav-social-section{
+    gap: 5rem;
+    font-size: 1.5rem;
+}
+
+main{
+    flex-grow: 1;
+}
+
+main > article{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 2fr 1fr;
+}
+
+main > article > .article-section{
+    height: 100%;
+    border: 1px solid var(--custom-border-color);
+}
