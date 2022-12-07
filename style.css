@@ -74,7 +74,7 @@ nav > .nav-section{
 
 #nav-social-section{
     gap: 5rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     flex-grow: 1;
 }
 
@@ -94,3 +94,66 @@ main > article > .article-section{
     border-left: 1px solid var(--custom-border-color);
     border-bottom: 1px solid var(--custom-border-color);
 }
+
+.article-image-section > img{
+    height: 90%;
+    width: 90%;
+}
+
+.arrow-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.left-arrow,
+.right-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--custom-border-color);
+}
+
+.left-arrow > button,
+.right-arrow > button{
+    font-size: 6rem;
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.fa-discord{
+    transition: .2s;
+    color: white;   
+}
+
+.fa-discord:hover{
+    transition: .2s;
+    font-size: 2.5rem;
+    color: rgb(114, 137, 218);
+}
+
+.fa-github{
+    transition: .2s;
+    color: white;
+}
+
+.fa-github:hover{
+    transition: .2s;
+    font-size: 2.5rem;
+    color: rgb(51, 51, 51);
+}
+
+.fa-twitter{
+    transition: .2s;
+    color: white;
+}
+
+.fa-twitter:hover{
+    transition: .2s;
+    font-size: 2.5rem;
+    color: rgb(29, 161, 242);
+}
+
