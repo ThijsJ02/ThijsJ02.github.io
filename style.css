@@ -1,9 +1,10 @@
 :root{
     --custom-border-color: rgba(255, 255, 255, .1);
+    --background-color: rgb(5, 10, 24);
 }
 
 body{
-    background-color: rgb(5, 10, 24); 
+    background-color: var(--background-color); 
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -32,7 +33,7 @@ nav{
 }
 
 nav > .nav-section{
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
     display: flex;
     gap: 1rem;
     border-left: 1px solid var(--custom-border-color);
@@ -48,6 +49,18 @@ nav > .nav-section{
 
 #nav-logo-section > a > i{
     font-size: 2.5rem;
+    transition: 1s;
+    color: white !important;
+}
+
+#nav-logo-section > a > i:hover{
+    transition: 1s;
+    transform: rotate(-288deg);
+    color: yellow !important;
+}
+
+#nav-logo-section > a{
+    font-size: 2.5rem;
 }
 
 #nav-logo-section{
@@ -62,6 +75,7 @@ nav > .nav-section{
 #nav-social-section{
     gap: 5rem;
     font-size: 1.5rem;
+    flex-grow: 1;
 }
 
 main{
@@ -71,10 +85,12 @@ main{
 main > article{
     display: grid;
     height: 100%;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
 }
 
 main > article > .article-section{
     height: 100%;
-    border: 1px solid var(--custom-border-color);
+    border-left: 1px solid var(--custom-border-color);
+    border-bottom: 1px solid var(--custom-border-color);
 }
