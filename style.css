@@ -91,13 +91,53 @@ main > article{
 
 main > article > .article-section{
     height: 100%;
+    display: flex;
     border-left: 1px solid var(--custom-border-color);
     border-bottom: 1px solid var(--custom-border-color);
 }
 
-.article-image-section > img{
-    height: 90%;
-    width: 90%;
+.article-image-section{
+    background-image: url(https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80);
+}
+
+main > article > .article-image-section {
+    background-position: center;
+    background-size: cover;
+}
+
+main > article > .article-description-section {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 4rem; 
+}
+
+main > article > .article-description-section > p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25em;
+}
+
+main > article > .article-title-section {
+    align-items: center; 
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+  
+main > article > .article-title-section * {
+    color: white;  
+}
+  
+main > article > .article-title-section > h2 {
+    flex-basis: 50%;
+    font-family: "Rubik", sans-serif;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    margin: 0px;
+    text-transform: uppercase;  
+}
+  
+main > article > .article-title-section > i {
+    color: rgba(255, 255, 255, 0.75);
+    font-size:  4rem;
 }
 
 .arrow-container{
